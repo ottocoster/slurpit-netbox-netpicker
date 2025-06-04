@@ -1,0 +1,264 @@
+2025/06/03 11:49:24 [notice] 449#449: using the "epoll" event method
+2025/06/03 11:49:24 [notice] 449#449: nginx/1.18.0 (Ubuntu)
+2025/06/03 11:49:24 [notice] 449#449: OS: Linux 6.6.87.1-microsoft-standard-WSL2
+2025/06/03 11:49:24 [notice] 449#449: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/03 11:49:24 [notice] 449#449: start worker processes
+2025/06/03 11:49:24 [notice] 449#449: start worker process 450
+2025/06/03 11:49:24 [notice] 449#449: start worker process 451
+2025/06/03 11:49:24 [notice] 449#449: start worker process 454
+2025/06/03 11:49:24 [notice] 449#449: start worker process 471
+2025/06/03 11:49:24 [notice] 449#449: start worker process 487
+2025/06/03 11:49:24 [notice] 449#449: start worker process 525
+2025/06/03 11:49:24 [notice] 449#449: start worker process 545
+2025/06/03 11:49:24 [notice] 449#449: start worker process 563
+2025/06/03 11:49:24 [notice] 449#449: start worker process 600
+2025/06/03 11:49:24 [notice] 449#449: start worker process 633
+2025/06/03 11:49:24 [notice] 449#449: start worker process 676
+2025/06/03 11:49:24 [notice] 449#449: start worker process 728
+2025/06/03 11:49:24 [notice] 449#449: start worker process 774
+2025/06/03 11:49:24 [notice] 449#449: start worker process 800
+2025/06/03 11:49:24 [notice] 449#449: start worker process 820
+2025/06/03 11:49:24 [notice] 449#449: start worker process 848
+2025/06/03 11:53:27 [notice] 449#449: signal 3 (SIGQUIT) received from 1208, shutting down
+2025/06/03 11:53:27 [notice] 450#450: gracefully shutting down
+2025/06/03 11:53:27 [notice] 471#471: gracefully shutting down
+2025/06/03 11:53:27 [notice] 451#451: gracefully shutting down
+2025/06/03 11:53:27 [notice] 487#487: gracefully shutting down
+2025/06/03 11:53:27 [notice] 454#454: gracefully shutting down
+2025/06/03 11:53:27 [notice] 525#525: gracefully shutting down
+2025/06/03 11:53:27 [notice] 563#563: gracefully shutting down
+2025/06/03 11:53:27 [notice] 600#600: gracefully shutting down
+2025/06/03 11:53:27 [notice] 545#545: gracefully shutting down
+2025/06/03 11:53:27 [notice] 545#545: exiting
+2025/06/03 11:53:27 [notice] 450#450: exiting
+2025/06/03 11:53:27 [notice] 728#728: gracefully shutting down
+2025/06/03 11:53:27 [notice] 676#676: gracefully shutting down
+2025/06/03 11:53:27 [notice] 800#800: gracefully shutting down
+2025/06/03 11:53:27 [notice] 633#633: gracefully shutting down
+2025/06/03 11:53:27 [notice] 820#820: gracefully shutting down
+2025/06/03 11:53:27 [notice] 774#774: gracefully shutting down
+2025/06/03 11:53:27 [notice] 848#848: gracefully shutting down
+2025/06/03 11:53:27 [notice] 774#774: exiting
+2025/06/03 11:53:27 [notice] 471#471: exiting
+2025/06/03 11:53:27 [notice] 848#848: exiting
+2025/06/03 11:53:27 [notice] 451#451: exiting
+2025/06/03 11:53:27 [notice] 487#487: exiting
+2025/06/03 11:53:27 [notice] 454#454: exiting
+2025/06/03 11:53:27 [notice] 525#525: exiting
+2025/06/03 11:53:27 [notice] 563#563: exiting
+2025/06/03 11:53:27 [notice] 600#600: exiting
+2025/06/03 11:53:27 [notice] 728#728: exiting
+2025/06/03 11:53:27 [notice] 676#676: exiting
+2025/06/03 11:53:27 [notice] 800#800: exiting
+2025/06/03 11:53:27 [notice] 633#633: exiting
+2025/06/03 11:53:27 [notice] 820#820: exiting
+2025/06/03 11:53:27 [notice] 450#450: exit
+2025/06/03 11:53:27 [notice] 545#545: exit
+2025/06/03 11:53:27 [notice] 471#471: exit
+2025/06/03 11:53:27 [notice] 454#454: exit
+2025/06/03 11:53:27 [notice] 449#449: signal 17 (SIGCHLD) received from 545
+2025/06/03 11:53:27 [notice] 451#451: exit
+2025/06/03 11:53:27 [notice] 563#563: exit
+2025/06/03 11:53:27 [notice] 774#774: exit
+2025/06/03 11:53:27 [notice] 848#848: exit
+2025/06/03 11:53:27 [notice] 487#487: exit
+2025/06/03 11:53:27 [notice] 449#449: worker process 450 exited with code 0
+2025/06/03 11:53:27 [notice] 728#728: exit
+2025/06/03 11:53:27 [notice] 525#525: exit
+2025/06/03 11:53:27 [notice] 633#633: exit
+2025/06/03 11:53:27 [notice] 600#600: exit
+2025/06/03 11:53:27 [notice] 676#676: exit
+2025/06/03 11:53:27 [notice] 820#820: exit
+2025/06/03 11:53:27 [notice] 800#800: exit
+2025/06/03 11:53:27 [notice] 449#449: worker process 451 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 454 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 471 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 487 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 525 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 545 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 563 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 600 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 633 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 676 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 728 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 774 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 800 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 820 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: worker process 848 exited with code 0
+2025/06/03 11:53:27 [notice] 449#449: exit
+2025/06/03 11:59:11 [notice] 441#441: using the "epoll" event method
+2025/06/03 11:59:11 [notice] 441#441: nginx/1.18.0 (Ubuntu)
+2025/06/03 11:59:11 [notice] 441#441: OS: Linux 6.6.87.1-microsoft-standard-WSL2
+2025/06/03 11:59:11 [notice] 441#441: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/03 11:59:11 [notice] 441#441: start worker processes
+2025/06/03 11:59:11 [notice] 441#441: start worker process 442
+2025/06/03 11:59:11 [notice] 441#441: start worker process 443
+2025/06/03 11:59:11 [notice] 441#441: start worker process 446
+2025/06/03 11:59:11 [notice] 441#441: start worker process 459
+2025/06/03 11:59:11 [notice] 441#441: start worker process 574
+2025/06/03 11:59:11 [notice] 441#441: start worker process 575
+2025/06/03 11:59:11 [notice] 441#441: start worker process 583
+2025/06/03 11:59:11 [notice] 441#441: start worker process 596
+2025/06/03 11:59:11 [notice] 441#441: start worker process 706
+2025/06/03 11:59:11 [notice] 441#441: start worker process 707
+2025/06/03 11:59:11 [notice] 441#441: start worker process 748
+2025/06/03 11:59:11 [notice] 441#441: start worker process 764
+2025/06/03 11:59:11 [notice] 441#441: start worker process 777
+2025/06/03 11:59:11 [notice] 441#441: start worker process 792
+2025/06/03 11:59:11 [notice] 441#441: start worker process 809
+2025/06/03 11:59:11 [notice] 441#441: start worker process 863
+2025/06/03 12:04:08 [notice] 441#441: signal 3 (SIGQUIT) received from 1269, shutting down
+2025/06/03 12:04:08 [notice] 442#442: gracefully shutting down
+2025/06/03 12:04:08 [notice] 707#707: gracefully shutting down
+2025/06/03 12:04:08 [notice] 443#443: gracefully shutting down
+2025/06/03 12:04:08 [notice] 574#574: gracefully shutting down
+2025/06/03 12:04:08 [notice] 459#459: gracefully shutting down
+2025/06/03 12:04:08 [notice] 706#706: gracefully shutting down
+2025/06/03 12:04:08 [notice] 459#459: exiting
+2025/06/03 12:04:08 [notice] 575#575: gracefully shutting down
+2025/06/03 12:04:08 [notice] 583#583: gracefully shutting down
+2025/06/03 12:04:08 [notice] 446#446: gracefully shutting down
+2025/06/03 12:04:08 [notice] 596#596: gracefully shutting down
+2025/06/03 12:04:08 [notice] 777#777: gracefully shutting down
+2025/06/03 12:04:08 [notice] 764#764: gracefully shutting down
+2025/06/03 12:04:08 [notice] 777#777: exiting
+2025/06/03 12:04:08 [notice] 748#748: gracefully shutting down
+2025/06/03 12:04:08 [notice] 792#792: gracefully shutting down
+2025/06/03 12:04:08 [notice] 809#809: gracefully shutting down
+2025/06/03 12:04:08 [notice] 863#863: gracefully shutting down
+2025/06/03 12:04:08 [notice] 442#442: exiting
+2025/06/03 12:04:08 [notice] 863#863: exiting
+2025/06/03 12:04:08 [notice] 707#707: exiting
+2025/06/03 12:04:08 [notice] 443#443: exiting
+2025/06/03 12:04:08 [notice] 574#574: exiting
+2025/06/03 12:04:08 [notice] 706#706: exiting
+2025/06/03 12:04:08 [notice] 575#575: exiting
+2025/06/03 12:04:08 [notice] 583#583: exiting
+2025/06/03 12:04:08 [notice] 446#446: exiting
+2025/06/03 12:04:08 [notice] 707#707: exit
+2025/06/03 12:04:08 [notice] 596#596: exiting
+2025/06/03 12:04:08 [notice] 764#764: exiting
+2025/06/03 12:04:08 [notice] 583#583: exit
+2025/06/03 12:04:08 [notice] 459#459: exit
+2025/06/03 12:04:08 [notice] 748#748: exiting
+2025/06/03 12:04:08 [notice] 792#792: exiting
+2025/06/03 12:04:08 [notice] 809#809: exiting
+2025/06/03 12:04:08 [notice] 777#777: exit
+2025/06/03 12:04:08 [notice] 442#442: exit
+2025/06/03 12:04:08 [notice] 863#863: exit
+2025/06/03 12:04:08 [notice] 443#443: exit
+2025/06/03 12:04:08 [notice] 574#574: exit
+2025/06/03 12:04:08 [notice] 706#706: exit
+2025/06/03 12:04:08 [notice] 575#575: exit
+2025/06/03 12:04:08 [notice] 809#809: exit
+2025/06/03 12:04:08 [notice] 441#441: signal 17 (SIGCHLD) received from 707
+2025/06/03 12:04:08 [notice] 446#446: exit
+2025/06/03 12:04:08 [notice] 596#596: exit
+2025/06/03 12:04:08 [notice] 764#764: exit
+2025/06/03 12:04:08 [notice] 748#748: exit
+2025/06/03 12:04:08 [notice] 792#792: exit
+2025/06/03 12:04:08 [notice] 441#441: worker process 442 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 443 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 446 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 459 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 574 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 575 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 583 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 596 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 706 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 707 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 748 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 764 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 777 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 792 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 809 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: worker process 863 exited with code 0
+2025/06/03 12:04:08 [notice] 441#441: exit
+2025/06/03 12:06:58 [notice] 368#368: using the "epoll" event method
+2025/06/03 12:06:58 [notice] 368#368: nginx/1.18.0 (Ubuntu)
+2025/06/03 12:06:58 [notice] 368#368: OS: Linux 6.6.87.1-microsoft-standard-WSL2
+2025/06/03 12:06:58 [notice] 368#368: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/06/03 12:06:58 [notice] 368#368: start worker processes
+2025/06/03 12:06:58 [notice] 368#368: start worker process 369
+2025/06/03 12:06:58 [notice] 368#368: start worker process 370
+2025/06/03 12:06:58 [notice] 368#368: start worker process 374
+2025/06/03 12:06:58 [notice] 368#368: start worker process 386
+2025/06/03 12:06:58 [notice] 368#368: start worker process 405
+2025/06/03 12:06:58 [notice] 368#368: start worker process 432
+2025/06/03 12:06:58 [notice] 368#368: start worker process 464
+2025/06/03 12:06:58 [notice] 368#368: start worker process 494
+2025/06/03 12:06:58 [notice] 368#368: start worker process 524
+2025/06/03 12:06:58 [notice] 368#368: start worker process 666
+2025/06/03 12:06:58 [notice] 368#368: start worker process 669
+2025/06/03 12:06:58 [notice] 368#368: start worker process 682
+2025/06/03 12:06:58 [notice] 368#368: start worker process 698
+2025/06/03 12:06:58 [notice] 368#368: start worker process 718
+2025/06/03 12:06:58 [notice] 368#368: start worker process 755
+2025/06/03 12:06:58 [notice] 368#368: start worker process 785
+2025/06/03 12:07:41 [notice] 368#368: signal 3 (SIGQUIT) received from 962, shutting down
+2025/06/03 12:07:41 [notice] 369#369: gracefully shutting down
+2025/06/03 12:07:41 [notice] 494#494: gracefully shutting down
+2025/06/03 12:07:41 [notice] 370#370: gracefully shutting down
+2025/06/03 12:07:41 [notice] 374#374: gracefully shutting down
+2025/06/03 12:07:41 [notice] 374#374: exiting
+2025/06/03 12:07:41 [notice] 386#386: gracefully shutting down
+2025/06/03 12:07:41 [notice] 405#405: gracefully shutting down
+2025/06/03 12:07:41 [notice] 432#432: gracefully shutting down
+2025/06/03 12:07:41 [notice] 464#464: gracefully shutting down
+2025/06/03 12:07:41 [notice] 666#666: gracefully shutting down
+2025/06/03 12:07:41 [notice] 374#374: exit
+2025/06/03 12:07:41 [notice] 369#369: exiting
+2025/06/03 12:07:41 [notice] 524#524: gracefully shutting down
+2025/06/03 12:07:41 [notice] 682#682: gracefully shutting down
+2025/06/03 12:07:41 [notice] 718#718: gracefully shutting down
+2025/06/03 12:07:41 [notice] 755#755: gracefully shutting down
+2025/06/03 12:07:41 [notice] 785#785: gracefully shutting down
+2025/06/03 12:07:41 [notice] 698#698: gracefully shutting down
+2025/06/03 12:07:41 [notice] 669#669: gracefully shutting down
+2025/06/03 12:07:41 [notice] 494#494: exiting
+2025/06/03 12:07:41 [notice] 370#370: exiting
+2025/06/03 12:07:41 [notice] 386#386: exiting
+2025/06/03 12:07:41 [notice] 405#405: exiting
+2025/06/03 12:07:41 [notice] 432#432: exiting
+2025/06/03 12:07:41 [notice] 464#464: exiting
+2025/06/03 12:07:41 [notice] 666#666: exiting
+2025/06/03 12:07:41 [notice] 524#524: exiting
+2025/06/03 12:07:41 [notice] 682#682: exiting
+2025/06/03 12:07:41 [notice] 718#718: exiting
+2025/06/03 12:07:41 [notice] 755#755: exiting
+2025/06/03 12:07:41 [notice] 368#368: signal 17 (SIGCHLD) received from 374
+2025/06/03 12:07:41 [notice] 785#785: exiting
+2025/06/03 12:07:41 [notice] 369#369: exit
+2025/06/03 12:07:41 [notice] 698#698: exiting
+2025/06/03 12:07:41 [notice] 669#669: exiting
+2025/06/03 12:07:41 [notice] 494#494: exit
+2025/06/03 12:07:41 [notice] 386#386: exit
+2025/06/03 12:07:41 [notice] 698#698: exit
+2025/06/03 12:07:41 [notice] 370#370: exit
+2025/06/03 12:07:41 [notice] 405#405: exit
+2025/06/03 12:07:41 [notice] 432#432: exit
+2025/06/03 12:07:41 [notice] 464#464: exit
+2025/06/03 12:07:41 [notice] 718#718: exit
+2025/06/03 12:07:41 [notice] 666#666: exit
+2025/06/03 12:07:41 [notice] 524#524: exit
+2025/06/03 12:07:41 [notice] 368#368: worker process 374 exited with code 0
+2025/06/03 12:07:41 [notice] 682#682: exit
+2025/06/03 12:07:41 [notice] 755#755: exit
+2025/06/03 12:07:41 [notice] 785#785: exit
+2025/06/03 12:07:41 [notice] 669#669: exit
+2025/06/03 12:07:41 [notice] 368#368: worker process 369 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 370 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 386 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 405 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 432 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 464 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 494 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 524 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 666 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 669 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 682 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 698 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 718 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 755 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: worker process 785 exited with code 0
+2025/06/03 12:07:41 [notice] 368#368: exit

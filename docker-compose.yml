@@ -1,0 +1,405 @@
+version: "3.7"
+
+x-tag-params: &tag-params
+  TAG_CONN_PARAMS: '{
+    "xslow":{"timeout":120,"conn_timeout":30,"read_timeout_override":30,"fast_cli":false,"keepalive":5},
+    "slow-cli": {"fast_cli": false}
+    }'
+
+x-api: &api_common
+  image: "netpicker/api:2.2.9"
+  environment:
+    alembic_version: "8e416d4b7f23"
+    JWT_SECRET: "ew9023cnkljfcnsdlkfsfdhs"
+    CLI_PROXY_HOST: netpicker-agent
+    LOG_LEVEL: INFO
+    UVICORN_ROOT_PATH: /
+  volumes:
+    - netpicker-policy-data:/data
+  networks:
+    - slurpit-network
+  depends_on:
+    netpicker-redis:
+      condition: service_healthy
+    netpicker-db:
+      condition: service_healthy
+    netpicker-gitd:
+      condition: service_started
+    netpicker-gitdctrl:
+      condition: service_healthy
+
+services:
+  netbox:
+    &netbox #image: registry.gitlab.com/slurpit.io/slurpit-netbox-docker:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    depends_on:
+      - postgres
+      - redis
+      - redis-cache
+    env_file: docker/env/netbox.env
+    user: "unit:root"
+    healthcheck:
+      start_period: 300s
+      timeout: 3s
+      interval: 15s
+      test: "curl -f http://localhost:8080/api/ || exit 1"
+    volumes:
+      - ./volumes/netbox-media-files:/opt/netbox/netbox/media:rw
+      - ./volumes/netbox-reports-files:/opt/netbox/netbox/reports:rw
+      - ./volumes/netbox-scripts-files:/opt/netbox/netbox/scripts:rw
+      - ./src/slurpit_netbox:/opt/netbox/netbox/slurpit_netbox:r
+    networks:
+      - slurpit-network
+
+  netbox-worker:
+    <<: *netbox
+    depends_on:
+      netbox:
+        condition: service_healthy
+    command:
+      - /opt/netbox/venv/bin/python
+      - /opt/netbox/netbox/manage.py
+      - rqworker
+    healthcheck:
+      start_period: 20s
+      timeout: 3s
+      interval: 15s
+      test: "ps -aux | grep -v grep | grep -q rqworker || exit 1"
+    networks:
+      - slurpit-network
+
+  netbox-housekeeping:
+    <<: *netbox
+    depends_on:
+      netbox:
+        condition: service_healthy
+    command:
+      - /opt/netbox/housekeeping.sh
+    healthcheck:
+      start_period: 20s
+      timeout: 3s
+      interval: 15s
+      test: "ps -aux | grep -v grep | grep -q housekeeping || exit 1"
+    networks:
+      - slurpit-network
+
+  # postgres
+  postgres:
+    image: docker.io/postgres:15-alpine
+    env_file: docker/env/postgres.env
+    volumes:
+      - ./volumes/netbox-postgres-data:/var/lib/postgresql/data
+    networks:
+      - slurpit-network
+
+  # redis
+  redis:
+    image: docker.io/redis:7-alpine
+    command:
+      - sh
+      - -c # this is to evaluate the $REDIS_PASSWORD from the env
+      - redis-server --appendonly yes --requirepass $$REDIS_PASSWORD ## $$ because of docker-compose
+    env_file: docker/env/redis.env
+    volumes:
+      - ./volumes/netbox-redis-data:/data
+    networks:
+      - slurpit-network
+  redis-cache:
+    image: docker.io/redis:7-alpine
+    command:
+      - sh
+      - -c # this is to evaluate the $REDIS_PASSWORD from the env
+      - redis-server --requirepass $$REDIS_PASSWORD ## $$ because of docker-compose
+    env_file: docker/env/redis-cache.env
+    volumes:
+      - ./volumes/netbox-redis-cache-data:/data
+    networks:
+      - slurpit-network
+
+  slurpit-warehouse:
+    image: slurpit/warehouse:latest
+    container_name: slurpit-warehouse
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/services"]
+      interval: 10s
+      timeout: 10s
+      retries: 360
+    networks:
+      - slurpit-network
+    environment:
+      TZ: Europe/Amsterdam
+      WAREHOUSE_PORTAL_URL: http://slurpit-portal
+    volumes:
+      - ./backup/warehouse:/backup/files
+      - ./db/warehouse:/var/lib/mongodb
+      - ./logs/warehouse/mongodb:/var/log/mongodb
+    restart: always
+
+  slurpit-scraper:
+    image: slurpit/scraper:latest
+    container_name: slurpit-scraper
+    depends_on:
+      slurpit-warehouse:
+        condition: service_healthy
+    networks:
+      - slurpit-network
+    environment:
+      TZ: Europe/Amsterdam
+      SCRAPER_TIMEOUT: 20
+      SCRAPER_POOLSIZE: 8
+      SCRAPER_WAREHOUSE_HOSTNAME: slurpit-warehouse
+    restart: always
+
+  slurpit-scanner:
+    image: slurpit/scanner:latest
+    container_name: slurpit-scanner
+    depends_on:
+      slurpit-warehouse:
+        condition: service_healthy
+    networks:
+      - slurpit-network
+    environment:
+      TZ: Europe/Amsterdam
+      SCANNER_POOLSIZE: 8
+      SCANNER_SNMP_TIMEOUT: 6
+      SCANNER_WAREHOUSE_HOSTNAME: slurpit-warehouse
+    restart: always
+
+  slurpit-portal:
+    image: slurpit/portal:latest
+    container_name: slurpit-portal
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 10s
+      timeout: 10s
+      retries: 360
+    networks:
+      - slurpit-network
+    depends_on:
+      slurpit-warehouse:
+        condition: service_healthy
+    environment:
+      TZ: Europe/Amsterdam
+      PORTAL_BASE_URL: http://localhost
+      PORTAL_WAREHOUSE_URL: http://slurpit-warehouse
+      PORTAL_MENU_MODE: "classic"
+    volumes:
+      - ./logs/nginx:/var/log/nginx/
+      - ./logs/mysql:/var/log/mysql/
+      - ./logs/php:/var/log/php/
+      - ./certs:/etc/nginx/certs/
+      - ./db/portal:/var/lib/mysql
+      - ./backup/portal:/backup/files
+    restart: always
+
+  # Netpicker Services
+  netpicker-db:
+    image: netpicker/db
+    container_name: netpicker-db
+    labels:
+      netpicker.io: service
+    environment:
+      POSTGRES_PASSWORD: s3rgts0p!
+    volumes:
+      - netpicker-pg-data:/var/lib/postgresql/data
+    networks:
+      - slurpit-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U netpicker"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s
+
+  netpicker-api:
+    <<: *api_common
+    container_name: netpicker-api
+    labels:
+      netpicker.io: service
+      service.netpicker.io: api
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/status"]
+      start_period: 60s
+      interval: 5s
+      retries: 5
+      timeout: 10s
+
+  netpicker-celery:
+    <<: *api_common
+    depends_on:
+      netpicker-api:
+        condition: service_healthy
+    container_name: netpicker-celery
+    labels:
+      netpicker.io: service
+      service.netpicker.io: celery
+    command: /run-celery
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "CELERY_BROKER_URL=redis://netpicker-redis celery inspect ping -t 5",
+        ]
+      start_period: 15s
+      interval: 30s
+
+  netpicker-redis:
+    image: redis:7-alpine
+    container_name: netpicker-redis
+    labels:
+      netpicker.io: service
+    volumes:
+      - netpicker-redis-data:/data
+    networks:
+      - slurpit-network
+    command: "--save 60 1 --loglevel warning"
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+
+  netpicker-gitd:
+    image: "netpicker/gitd:2.2.9"
+    container_name: netpicker-gitd
+    labels:
+      netpicker.io: service
+      service.netpicker.io: gitd
+    volumes:
+      - netpicker-git:/git
+    networks:
+      - slurpit-network
+
+  netpicker-gitdctrl:
+    image: "netpicker/gitdctrl:2.2.9"
+    container_name: netpicker-gitdctrl
+    labels:
+      netpicker.io: service
+      service.netpicker.io: gitdctrl
+    volumes:
+      - netpicker-git:/git
+    networks:
+      - slurpit-network
+    healthcheck:
+      test: echo "PING" | nc -v localhost 9419
+      start_period: 5s
+      interval: 5s
+    restart: unless-stopped
+
+  netpicker-swagger:
+    image: swaggerapi/swagger-ui
+    container_name: netpicker-swagger
+    environment:
+      SWAGGER_JSON_URL: "/openapi.json"
+      TRY_IT_OUT_ENABLED: 1
+    networks:
+      - slurpit-network
+    depends_on:
+      - netpicker-api
+
+  netpicker-frontend:
+    image: "netpicker/tester-frontend:2.2.9"
+    container_name: netpicker-frontend
+    labels:
+      netpicker.io: service
+      service.netpicker.io: front-end
+    ports:
+      - "8008:80"
+    networks:
+      - slurpit-network
+    depends_on:
+      - netpicker-api
+
+  netpicker-kibbitzer:
+    image: "netpicker/kibbitzer:2.2.9"
+    container_name: netpicker-kibbitzer
+    labels:
+      netpicker.io: service
+      service.netpicker.io: kibbitzer
+    environment:
+      <<: *tag-params
+      LOG_LEVEL: DEBUG
+      SHENV_API_URL: http://netpicker-api:8000
+      SHENV_API_TIMEOUT: 30
+      SHENV_PRIVILEGED_PLATFORMS: "gigamon_gigavue arista_eos"
+      SHENV_SHOW_RUN_aruba_os: "show configuration"
+      SHENV_SHOW_RUN_corvil: "show config"
+      SHENV_SHOW_RUN_gigamon: "show running"
+      SHENV_SHOW_RUN_meinberg: "generate_config_backup && cat /var/tmp/lantime_config.backup"
+      SHENV_SHOW_RUN_mikrotik_routeros: "export"
+      SHENV_SHOW_RUN_nokia_srl: "info"
+      SHENV_SHOW_RUN_paloalto_panos: "show config running"
+      SHENV_TAG_SHOW_RUN_mikrotik_routeros_v7: "export show-sensitive"
+    healthcheck:
+      test: echo "ping Mac\n" | nc -v 127.0.0.1 9696
+      start_period: 15s
+      interval: 30s
+    volumes:
+      - netpicker-secret:/run/secrets
+      - ./textfsm:/textfsm
+    networks:
+      - slurpit-network
+    depends_on:
+      - netpicker-api
+      - netpicker-redis
+
+  netpicker-agent:
+    hostname: netpicker-agent
+    image: "netpicker/agent:2.2.9"
+    container_name: netpicker-agent
+    labels:
+      netpicker.io: service
+      service.netpicker.io: agent
+    environment:
+      <<: *tag-params
+      CLI_PROXY_ADDR: "0.0.0.0"
+      # CLI_TRACE_DIR: /tmp/trace-cli
+      # DEDICATED_CONNECTIONS: 1
+      # SHENV_JUMP_HOST: '192.168.60.3'
+      SHARED_SSH_TTL: 180
+    volumes:
+      - netpicker-secret:/run/secrets
+    networks:
+      - slurpit-network
+    restart: unless-stopped
+    depends_on:
+      netpicker-api:
+        condition: service_healthy
+    healthcheck:
+      test: "echo LST | nc -v 127.0.0.1 8765"
+      start_period: 12s
+      interval: 10s
+
+  netpicker-syslog-ng:
+    image: "netpicker/syslog-ng:2.2.9"
+    container_name: netpicker-syslog-ng
+    labels:
+      netpicker.io: service
+      service.netpicker.io: syslog-ng
+    ports:
+      - 5514:514/udp
+      - 6601:601/tcp
+      - 6514:6614/tcp
+    volumes:
+      - netpicker-syslog:/var/lib/syslog-ng
+    networks:
+      - slurpit-network
+    depends_on:
+      - netpicker-agent
+
+volumes:
+  # Netpicker volumes
+  netpicker-config:
+  netpicker-git:
+  netpicker-pg-data:
+  netpicker-policy-data:
+  netpicker-redis-data:
+  netpicker-secret:
+  netpicker-syslog:
+  netpicker-transferium:
+
+networks:
+  slurpit-network:
+    driver: bridge

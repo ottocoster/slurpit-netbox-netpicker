@@ -1,0 +1,21 @@
+[03-Jun-2025 09:48:38] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[03-Jun-2025 09:48:38] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[03-Jun-2025 09:48:38] NOTICE: fpm is running, pid 53
+[03-Jun-2025 09:48:38] NOTICE: ready to handle connections
+[03-Jun-2025 09:48:38] NOTICE: systemd monitor interval set to 10000ms
+[03-Jun-2025 09:53:27] NOTICE: Finishing ...
+[03-Jun-2025 09:53:27] NOTICE: exiting, bye-bye!
+[03-Jun-2025 09:58:27] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[03-Jun-2025 09:58:27] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[03-Jun-2025 09:58:27] NOTICE: fpm is running, pid 54
+[03-Jun-2025 09:58:27] NOTICE: ready to handle connections
+[03-Jun-2025 09:58:27] NOTICE: systemd monitor interval set to 10000ms
+[03-Jun-2025 10:04:08] NOTICE: Finishing ...
+[03-Jun-2025 10:04:08] NOTICE: exiting, bye-bye!
+[03-Jun-2025 10:06:53] NOTICE: [pool www] 'user' directive is ignored when FPM is not running as root
+[03-Jun-2025 10:06:53] NOTICE: [pool www] 'group' directive is ignored when FPM is not running as root
+[03-Jun-2025 10:06:53] NOTICE: fpm is running, pid 53
+[03-Jun-2025 10:06:53] NOTICE: ready to handle connections
+[03-Jun-2025 10:06:53] NOTICE: systemd monitor interval set to 10000ms
+[03-Jun-2025 10:07:41] NOTICE: Finishing ...
+[03-Jun-2025 10:07:41] NOTICE: exiting, bye-bye!

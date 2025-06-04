@@ -1,0 +1,10 @@
+**/__pycache__/*
+**/*.pyc
+dist/*
+.idea
+**/*.egg-info/*
+volumes/*
+volumes.*
+volumes.*/
+poetry.lock
+docker-compose.override.yml

@@ -1,0 +1,3528 @@
+/usr/sbin/mariadbd, Version: 10.5.28-MariaDB-ubu2004-log (mariadb.org binary distribution). started with:
+Tcp port: 3306  Unix socket: /run/mysqld/mysqld.sock
+Time		    Id Command	Argument
+# Time: 250603  9:48:41
+# User@Host: root[root] @ localhost []
+# Thread_id: 7  Schema:   QC_hit: No
+# Query_time: 0.002070  Lock_time: 0.001680  Rows_sent: 1  Rows_examined: 2
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1748944121;
+SELECT count(*) FROM mysql.user WHERE user='root' and password='' and plugin in ('', 'mysql_native_password', 'mysql_old_password');
+# User@Host: root[root] @ localhost []
+# Thread_id: 8  Schema:   QC_hit: No
+# Query_time: 0.018068  Lock_time: 0.000245  Rows_sent: 24  Rows_examined: 31
+# Rows_affected: 0  Bytes_sent: 1622
+SET timestamp=1748944121;
+select concat('select count(*) into @discard from `',
+                    TABLE_SCHEMA, '`.`', TABLE_NAME, '`')
+      from information_schema.TABLES where TABLE_SCHEMA<>'INFORMATION_SCHEMA' and TABLE_SCHEMA<>'PERFORMANCE_SCHEMA' and ( ENGINE='MyISAM' or ENGINE='Aria' );
+# Time: 250603  9:49:14
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.003610  Lock_time: 0.003382  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+use `portal`;
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '27bed70236c4d279a66964277430fa80';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000314  Lock_time: 0.000214  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4653f7dfad0a469ee725e33c74d1d45c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000344  Lock_time: 0.000273  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0629b86c34e28aa1dd82d0495b2f4227';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000204  Lock_time: 0.000138  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '15263d7a0f624a317f24385fd61e0e7d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000272  Lock_time: 0.000212  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1bf2b2e6d6869514b1ec8d18a5c59d9b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000181  Lock_time: 0.000117  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2280e42554c4a7a54d5cb3742213ad7e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '55b976e8109bcf0873e2d229559c1951';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000109  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '687f0114d072d3da96807ff0cf26d241';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000202  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe79c83bc428ea2730fc53e3a5529b22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000184  Lock_time: 0.000123  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 385
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ffcc787986c89a5fbbb93b8532ea8a93';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000160  Lock_time: 0.000102  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'afaa36ba17880fa5736f5738604365dd';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000175  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0d1b9c2b05f6c4703ae8bfb6d9de795f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000201  Lock_time: 0.000140  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3534e2bff5d7bf3e22a19c306c70cb0a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000280  Lock_time: 0.000146  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b28c2c59d4c1b5a798f2bb16c10eab9a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000204  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '33739a568fab4b9cea9539a7aadbad38';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000131  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'abfc4fdcb287d98566325b72da49fe2c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000191  Lock_time: 0.000127  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5ef7df62a1c7f5aae8d630668ff3eb15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000117  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f2f4febc37f8772cd86a9d3b4f8ce9ac';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000177  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5b0ad804cbccf3463e132681af5025eb';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000103  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9b296f3c123b795f838a41efee72bee3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000178  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'a9a3af6bafe713a1049d9eceb76b2795';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000178  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2d244d4bbef137404a2e2e192613c23b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e16256e16ac50457b13529e006be0914';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000168  Lock_time: 0.000105  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9ea486d0cc2224ca78d4d0d8de6f57d5';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000161  Lock_time: 0.000098  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4f77207fa8605accfacca2da146d555e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000181  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f32cdac5e692fb011a5a71606abb1474';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e6d83626b12270017a6ae6a092871689';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000168  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '964e5d75b6cb9ccac1f8f7dd610022c3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000181  Lock_time: 0.000117  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f53251bfbfd9500b0628543fdc1cd6e8';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000172  Lock_time: 0.000110  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd7a662311c5d96a6946d0475e7a14ab2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000176  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '7dfb93214c17b4d5820b36fff474210d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000193  Lock_time: 0.000132  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '481d7770fb2003fed6fc460c687ee150';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000180  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '09aa4a74d1fb720dce1095cfb0e6f203';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b858941a7d9ce56cf149d772afbe186c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000111  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '065d74199e2259ae4f8414e7ceb6a38d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000172  Lock_time: 0.000112  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f7f813174799acab22df64d0bf5c6c15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000110  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '058ac69078d493eb0676a394ac9c5ef1';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000189  Lock_time: 0.000124  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '56ddeadb9530c63f614cbd1f0a1a5eb4';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000175  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '92016a7bccfc9938d33768f435c89779';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000190  Lock_time: 0.000129  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ea7c594b11bbc3179b8c376d932c7827';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000208  Lock_time: 0.000146  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f43322cae55f0c132ebf88c80f22707e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000201  Lock_time: 0.000129  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 381
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'be055e22240be6fd2eea422d51e38004';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000195  Lock_time: 0.000128  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f507d6b3505139f95bc128842ef91199';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5e26031bfcc4e101bd3edcbc1322802a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000119  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4feead15f3f6bc3ff43d542a580e9fc9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000265  Lock_time: 0.000166  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '908a76e179a0265ca35633b80814bda3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000293  Lock_time: 0.000186  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3ac21d3906dc2fa095458b7e54c2845d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000294  Lock_time: 0.000190  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd00541ac12927da4e25bb5ad0e1132ea';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000231  Lock_time: 0.000162  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '725ef74d888db136869540fe337b84b9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000260  Lock_time: 0.000183  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5df3a515c3397788ced554cc9fe6adc2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000204  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'c2d93ba97683758caf083e02beedfe6e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000207  Lock_time: 0.000136  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e9b584184c2f81dea910adafa3df1382';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000234  Lock_time: 0.000168  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8d36bbe6536d8f8b6fa2751763c67bb0';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000283  Lock_time: 0.000217  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd707abe66c9472f341e74129a34e8b20';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000266  Lock_time: 0.000203  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1a4b2ca15a13e16830d22ce958ef940f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000280  Lock_time: 0.000218  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'bc661c4be1d9238745aacb333babbe22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000274  Lock_time: 0.000194  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '53b00fd5fa1334e3295d1fd5f96ae2ed';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000217  Lock_time: 0.000150  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8ea9e60c571f9c9c2c27809eb1bb55f7';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000264  Lock_time: 0.000197  Rows_sent: 0  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944154;
+SELECT * FROM dbchangelog where dbchangelog_hash like '71f11493b1d8ae659a851bc2720d5832';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.004591  Lock_time: 0.002292  Rows_sent: 0  Rows_examined: 13
+# Rows_affected: 1  Bytes_sent: 52
+SET timestamp=1748944154;
+UPDATE `rules` SET `content` = '{% set software_version = data.hostname | get_planning_data("Software versions") %}
+{% set found_info = software_version | list | first %}
+{% if found_info and found_info != "error" %}
+    {% do data["snmp_vars"].update({"ENTITY-MIB::entPhysicalSoftwareRev": found_info.Version}) %}
+{% endif %}' WHERE (`name` = 'Set missing Version information');
+# Time: 250603  9:49:15
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000709  Lock_time: 0.000538  Rows_sent: 0  Rows_examined: 119
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944155;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4fae47533d17b6176e0d18ca94d93b1b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.004916  Lock_time: 0.003044  Rows_sent: 0  Rows_examined: 149
+# Rows_affected: 1  Bytes_sent: 52
+SET timestamp=1748944155;
+UPDATE `vendors` SET `telnet` = 'infinera_packet_telnet' WHERE (`telnet` = 'infinera_telnet');
+# Time: 250603  9:49:16
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000678  Lock_time: 0.000526  Rows_sent: 0  Rows_examined: 120
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944156;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe6da47d03ae5a0af7fe22a43d67758d';
+# Time: 250603  9:49:17
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000599  Lock_time: 0.000420  Rows_sent: 0  Rows_examined: 121
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944157;
+SELECT * FROM dbchangelog where dbchangelog_hash like '208884891a03bd492ea28ad9d0009a8c';
+# Time: 250603  9:49:19
+# User@Host: root[root] @ localhost []
+# Thread_id: 37  Schema: portal  QC_hit: No
+# Query_time: 0.000375  Lock_time: 0.000176  Rows_sent: 149  Rows_examined: 298
+# Rows_affected: 0  Bytes_sent: 5910
+SET timestamp=1748944159;
+SELECT *
+FROM `vendors`
+ORDER BY `device_os` DESC;
+# Time: 250603  9:49:21
+# User@Host: root[root] @ localhost []
+# Thread_id: 38  Schema: portal  QC_hit: No
+# Query_time: 0.026552  Lock_time: 0.000221  Rows_sent: 54701  Rows_examined: 54701
+# Rows_affected: 0  Bytes_sent: 4652732
+SET timestamp=1748944161;
+SELECT *
+FROM `mac_lookup`;
+# Time: 250603  9:49:24
+# User@Host: root[root] @ localhost []
+# Thread_id: 39  Schema: portal  QC_hit: No
+# Query_time: 0.000423  Lock_time: 0.000264  Rows_sent: 1  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 596
+SET timestamp=1748944164;
+SELECT `rule`, `content` AS `template`, `order`
+FROM `rules`
+WHERE `rule_type` = 'transform'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# User@Host: root[root] @ localhost []
+# Thread_id: 39  Schema: portal  QC_hit: No
+# Query_time: 0.000233  Lock_time: 0.000150  Rows_sent: 0  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 239
+SET timestamp=1748944164;
+SELECT `id`, `rule`, `content` AS `message`, `alert_inverted` AS `inverted`
+FROM `rules`
+WHERE `rule_type` = 'alert'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# Time: 250603  9:50:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.005420  Lock_time: 0.005083  Rows_sent: 29  Rows_examined: 29
+# Rows_affected: 0  Bytes_sent: 6632
+SET timestamp=1748944201;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 11:50:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000514  Lock_time: 0.000375  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944201;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'scanner_connectivity';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000548  Lock_time: 0.000405  Rows_sent: 0  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944201;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'scraper_connectivity';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000482  Lock_time: 0.000367  Rows_sent: 0  Rows_examined: 2
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944201;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_connectivity';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000448  Lock_time: 0.000285  Rows_sent: 0  Rows_examined: 3
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944201;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603  9:51:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000704  Lock_time: 0.000273  Rows_sent: 29  Rows_examined: 45
+# Rows_affected: 0  Bytes_sent: 6860
+SET timestamp=1748944261;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 11:51:01';
+# Time: 250603  9:51:02
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000465  Lock_time: 0.000316  Rows_sent: 1  Rows_examined: 4
+# Rows_affected: 0  Bytes_sent: 1496
+SET timestamp=1748944262;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603  9:52:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.001018  Lock_time: 0.000526  Rows_sent: 29  Rows_examined: 46
+# Rows_affected: 0  Bytes_sent: 6860
+SET timestamp=1748944321;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 11:52:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000587  Lock_time: 0.000399  Rows_sent: 2  Rows_examined: 5
+# Rows_affected: 0  Bytes_sent: 1791
+SET timestamp=1748944321;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603  9:53:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 49  Schema: portal  QC_hit: No
+# Query_time: 0.000566  Lock_time: 0.000212  Rows_sent: 29  Rows_examined: 47
+# Rows_affected: 0  Bytes_sent: 6860
+SET timestamp=1748944381;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 11:53:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 49  Schema: portal  QC_hit: No
+# Query_time: 0.000703  Lock_time: 0.000532  Rows_sent: 3  Rows_examined: 6
+# Rows_affected: 0  Bytes_sent: 2086
+SET timestamp=1748944381;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+/usr/sbin/mariadbd, Version: 10.5.28-MariaDB-ubu2004-log (mariadb.org binary distribution). started with:
+Tcp port: 3306  Unix socket: /run/mysqld/mysqld.sock
+Time		    Id Command	Argument
+# Time: 250603  9:58:30
+# User@Host: root[root] @ localhost []
+# Thread_id: 7  Schema:   QC_hit: No
+# Query_time: 0.005770  Lock_time: 0.004848  Rows_sent: 1  Rows_examined: 2
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1748944710;
+SELECT count(*) FROM mysql.user WHERE user='root' and password='' and plugin in ('', 'mysql_native_password', 'mysql_old_password');
+# User@Host: root[root] @ localhost []
+# Thread_id: 8  Schema:   QC_hit: No
+# Query_time: 0.017898  Lock_time: 0.000239  Rows_sent: 24  Rows_examined: 31
+# Rows_affected: 0  Bytes_sent: 1622
+SET timestamp=1748944710;
+select concat('select count(*) into @discard from `',
+                    TABLE_SCHEMA, '`.`', TABLE_NAME, '`')
+      from information_schema.TABLES where TABLE_SCHEMA<>'INFORMATION_SCHEMA' and TABLE_SCHEMA<>'PERFORMANCE_SCHEMA' and ( ENGINE='MyISAM' or ENGINE='Aria' );
+# Time: 250603  9:59:03
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.003840  Lock_time: 0.003668  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+use `portal`;
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '27bed70236c4d279a66964277430fa80';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000280  Lock_time: 0.000190  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4653f7dfad0a469ee725e33c74d1d45c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000118  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0629b86c34e28aa1dd82d0495b2f4227';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000177  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '15263d7a0f624a317f24385fd61e0e7d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000117  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1bf2b2e6d6869514b1ec8d18a5c59d9b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000109  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2280e42554c4a7a54d5cb3742213ad7e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000172  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '55b976e8109bcf0873e2d229559c1951';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '687f0114d072d3da96807ff0cf26d241';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe79c83bc428ea2730fc53e3a5529b22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000189  Lock_time: 0.000125  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 385
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ffcc787986c89a5fbbb93b8532ea8a93';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000189  Lock_time: 0.000124  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'afaa36ba17880fa5736f5738604365dd';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000122  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0d1b9c2b05f6c4703ae8bfb6d9de795f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000128  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3534e2bff5d7bf3e22a19c306c70cb0a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000227  Lock_time: 0.000123  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b28c2c59d4c1b5a798f2bb16c10eab9a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000203  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '33739a568fab4b9cea9539a7aadbad38';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000110  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'abfc4fdcb287d98566325b72da49fe2c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5ef7df62a1c7f5aae8d630668ff3eb15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f2f4febc37f8772cd86a9d3b4f8ce9ac';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000172  Lock_time: 0.000109  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5b0ad804cbccf3463e132681af5025eb';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000168  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9b296f3c123b795f838a41efee72bee3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'a9a3af6bafe713a1049d9eceb76b2795';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000172  Lock_time: 0.000109  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2d244d4bbef137404a2e2e192613c23b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000250  Lock_time: 0.000131  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e16256e16ac50457b13529e006be0914';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000218  Lock_time: 0.000148  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9ea486d0cc2224ca78d4d0d8de6f57d5';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000192  Lock_time: 0.000127  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4f77207fa8605accfacca2da146d555e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000128  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f32cdac5e692fb011a5a71606abb1474';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000190  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e6d83626b12270017a6ae6a092871689';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000180  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '964e5d75b6cb9ccac1f8f7dd610022c3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000178  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f53251bfbfd9500b0628543fdc1cd6e8';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd7a662311c5d96a6946d0475e7a14ab2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000166  Lock_time: 0.000104  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '7dfb93214c17b4d5820b36fff474210d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000175  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '481d7770fb2003fed6fc460c687ee150';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000174  Lock_time: 0.000111  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '09aa4a74d1fb720dce1095cfb0e6f203';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b858941a7d9ce56cf149d772afbe186c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '065d74199e2259ae4f8414e7ceb6a38d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000174  Lock_time: 0.000112  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f7f813174799acab22df64d0bf5c6c15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000168  Lock_time: 0.000106  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '058ac69078d493eb0676a394ac9c5ef1';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000167  Lock_time: 0.000105  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '56ddeadb9530c63f614cbd1f0a1a5eb4';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '92016a7bccfc9938d33768f435c89779';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000166  Lock_time: 0.000104  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ea7c594b11bbc3179b8c376d932c7827';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000301  Lock_time: 0.000228  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f43322cae55f0c132ebf88c80f22707e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000280  Lock_time: 0.000212  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 381
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'be055e22240be6fd2eea422d51e38004';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000275  Lock_time: 0.000210  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f507d6b3505139f95bc128842ef91199';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000200  Lock_time: 0.000138  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5e26031bfcc4e101bd3edcbc1322802a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000262  Lock_time: 0.000193  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4feead15f3f6bc3ff43d542a580e9fc9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000125  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '908a76e179a0265ca35633b80814bda3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000174  Lock_time: 0.000113  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3ac21d3906dc2fa095458b7e54c2845d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000110  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd00541ac12927da4e25bb5ad0e1132ea';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000166  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '725ef74d888db136869540fe337b84b9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000105  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5df3a515c3397788ced554cc9fe6adc2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000167  Lock_time: 0.000107  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'c2d93ba97683758caf083e02beedfe6e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000163  Lock_time: 0.000104  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e9b584184c2f81dea910adafa3df1382';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000174  Lock_time: 0.000111  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8d36bbe6536d8f8b6fa2751763c67bb0';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000177  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd707abe66c9472f341e74129a34e8b20';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000167  Lock_time: 0.000105  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1a4b2ca15a13e16830d22ce958ef940f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000108  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'bc661c4be1d9238745aacb333babbe22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000178  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '53b00fd5fa1334e3295d1fd5f96ae2ed';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000177  Lock_time: 0.000112  Rows_sent: 1  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8ea9e60c571f9c9c2c27809eb1bb55f7';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000107  Rows_sent: 0  Rows_examined: 118
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944743;
+SELECT * FROM dbchangelog where dbchangelog_hash like '71f11493b1d8ae659a851bc2720d5832';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.004013  Lock_time: 0.001853  Rows_sent: 0  Rows_examined: 13
+# Rows_affected: 1  Bytes_sent: 52
+SET timestamp=1748944743;
+UPDATE `rules` SET `content` = '{% set software_version = data.hostname | get_planning_data("Software versions") %}
+{% set found_info = software_version | list | first %}
+{% if found_info and found_info != "error" %}
+    {% do data["snmp_vars"].update({"ENTITY-MIB::entPhysicalSoftwareRev": found_info.Version}) %}
+{% endif %}' WHERE (`name` = 'Set missing Version information');
+# Time: 250603  9:59:04
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000741  Lock_time: 0.000527  Rows_sent: 0  Rows_examined: 119
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944744;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4fae47533d17b6176e0d18ca94d93b1b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.003666  Lock_time: 0.001957  Rows_sent: 0  Rows_examined: 149
+# Rows_affected: 1  Bytes_sent: 52
+SET timestamp=1748944744;
+UPDATE `vendors` SET `telnet` = 'infinera_packet_telnet' WHERE (`telnet` = 'infinera_telnet');
+# Time: 250603  9:59:05
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000508  Lock_time: 0.000359  Rows_sent: 0  Rows_examined: 120
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944745;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe6da47d03ae5a0af7fe22a43d67758d';
+# Time: 250603  9:59:06
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.000478  Lock_time: 0.000322  Rows_sent: 0  Rows_examined: 121
+# Rows_affected: 0  Bytes_sent: 289
+SET timestamp=1748944746;
+SELECT * FROM dbchangelog where dbchangelog_hash like '208884891a03bd492ea28ad9d0009a8c';
+# Time: 250603  9:59:07
+# User@Host: root[root] @ localhost []
+# Thread_id: 37  Schema: portal  QC_hit: No
+# Query_time: 0.000903  Lock_time: 0.000536  Rows_sent: 149  Rows_examined: 298
+# Rows_affected: 0  Bytes_sent: 5910
+SET timestamp=1748944747;
+SELECT *
+FROM `vendors`
+ORDER BY `device_os` DESC;
+# Time: 250603  9:59:10
+# User@Host: root[root] @ localhost []
+# Thread_id: 38  Schema: portal  QC_hit: No
+# Query_time: 0.025799  Lock_time: 0.000241  Rows_sent: 54701  Rows_examined: 54701
+# Rows_affected: 0  Bytes_sent: 4652732
+SET timestamp=1748944750;
+SELECT *
+FROM `mac_lookup`;
+# Time: 250603  9:59:11
+# User@Host: root[root] @ localhost []
+# Thread_id: 39  Schema: portal  QC_hit: No
+# Query_time: 0.000267  Lock_time: 0.000143  Rows_sent: 1  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 596
+SET timestamp=1748944751;
+SELECT `rule`, `content` AS `template`, `order`
+FROM `rules`
+WHERE `rule_type` = 'transform'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# User@Host: root[root] @ localhost []
+# Thread_id: 39  Schema: portal  QC_hit: No
+# Query_time: 0.000195  Lock_time: 0.000125  Rows_sent: 0  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 239
+SET timestamp=1748944751;
+SELECT `id`, `rule`, `content` AS `message`, `alert_inverted` AS `inverted`
+FROM `rules`
+WHERE `rule_type` = 'alert'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# Time: 250603 10:00:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.006950  Lock_time: 0.006378  Rows_sent: 29  Rows_examined: 29
+# Rows_affected: 0  Bytes_sent: 6632
+SET timestamp=1748944801;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:00:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000546  Lock_time: 0.000384  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'scanner_connectivity';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000520  Lock_time: 0.000371  Rows_sent: 0  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'scraper_connectivity';
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.001617  Lock_time: 0.001488  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'juniper_junos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000164  Lock_time: 0.000112  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000143  Lock_time: 0.000096  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000210  Lock_time: 0.000143  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'hp_comware'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000176  Lock_time: 0.000121  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xr'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000121  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'arista_eos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000124  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000116  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'mikrotik_routeros'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000183  Lock_time: 0.000135  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ubiquiti_edgerouter'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000163  Lock_time: 0.000114  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ubiquiti_edgeswitch'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000116  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'huawei'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000180  Lock_time: 0.000133  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'fortinet'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000164  Lock_time: 0.000115  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000163  Lock_time: 0.000115  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruijie_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000167  Lock_time: 0.000119  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'nokia_srl'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000118  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'linux'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000169  Lock_time: 0.000121  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'extreme_exos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000117  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'oneaccess_oneos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000163  Lock_time: 0.000115  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_aoscx'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000115  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'paloalto_panos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000162  Lock_time: 0.000114  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruckus_fastiron'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000165  Lock_time: 0.000117  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_viptela'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 43  Schema: portal  QC_hit: No
+# Query_time: 0.000166  Lock_time: 0.000118  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'checkpoint_gaia'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000427  Lock_time: 0.000270  Rows_sent: 0  Rows_examined: 2
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_8_ARP';
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000260  Lock_time: 0.000159  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'hp_comware'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000224  Lock_time: 0.000149  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000236  Lock_time: 0.000152  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000215  Lock_time: 0.000140  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xr'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000218  Lock_time: 0.000146  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000452  Lock_time: 0.000323  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'arista_eos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000346  Lock_time: 0.000273  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'juniper_junos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000264  Lock_time: 0.000166  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ubiquiti_edgerouter'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000247  Lock_time: 0.000163  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'huawei'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000220  Lock_time: 0.000145  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000218  Lock_time: 0.000147  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruijie_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000220  Lock_time: 0.000150  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'nokia_srl'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000217  Lock_time: 0.000148  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'linux'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000243  Lock_time: 0.000173  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_aoscx'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000230  Lock_time: 0.000147  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'oneaccess_oneos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000225  Lock_time: 0.000150  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'extreme_exos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000214  Lock_time: 0.000144  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'mikrotik_routeros'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000213  Lock_time: 0.000144  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'checkpoint_gaia'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000206  Lock_time: 0.000136  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'vyatta_vyos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000214  Lock_time: 0.000144  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'fortinet'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000209  Lock_time: 0.000142  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'paloalto_panos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000202  Lock_time: 0.000134  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_viptela'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 44  Schema: portal  QC_hit: No
+# Query_time: 0.000212  Lock_time: 0.000143  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruckus_fastiron'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000423  Lock_time: 0.000283  Rows_sent: 0  Rows_examined: 3
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_3_Interfaces';
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000391  Lock_time: 0.000272  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000332  Lock_time: 0.000215  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'arista_eos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000303  Lock_time: 0.000185  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'juniper_junos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000287  Lock_time: 0.000197  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000293  Lock_time: 0.000203  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'hp_comware'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000245  Lock_time: 0.000163  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'mikrotik_routeros'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000268  Lock_time: 0.000170  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000265  Lock_time: 0.000172  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000261  Lock_time: 0.000164  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruijie_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000251  Lock_time: 0.000163  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'extreme_exos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000274  Lock_time: 0.000183  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'oneaccess_oneos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000250  Lock_time: 0.000169  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_aoscx'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000241  Lock_time: 0.000160  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'paloalto_panos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 45  Schema: portal  QC_hit: No
+# Query_time: 0.000262  Lock_time: 0.000177  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruckus_fastiron'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000476  Lock_time: 0.000294  Rows_sent: 0  Rows_examined: 4
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_6_Mac addresses';
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000338  Lock_time: 0.000246  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000200  Lock_time: 0.000141  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000196  Lock_time: 0.000132  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xr'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000124  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'arista_eos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000181  Lock_time: 0.000132  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'hp_comware'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000211  Lock_time: 0.000156  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'huawei'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000230  Lock_time: 0.000169  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'juniper_junos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000216  Lock_time: 0.000158  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'mikrotik_routeros'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000197  Lock_time: 0.000142  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000145  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000134  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruijie_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000185  Lock_time: 0.000133  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_aoscx'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000129  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'oneaccess_oneos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000129  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'extreme_exos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 46  Schema: portal  QC_hit: No
+# Query_time: 0.000206  Lock_time: 0.000128  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'nokia_srl'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000442  Lock_time: 0.000285  Rows_sent: 0  Rows_examined: 5
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_14_LLDP';
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000233  Lock_time: 0.000151  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000246  Lock_time: 0.000159  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000242  Lock_time: 0.000159  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xr'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000234  Lock_time: 0.000159  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_wlc'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 47  Schema: portal  QC_hit: No
+# Query_time: 0.000247  Lock_time: 0.000174  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000372  Lock_time: 0.000226  Rows_sent: 0  Rows_examined: 6
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_15_CDP';
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000272  Lock_time: 0.000169  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_ios'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000228  Lock_time: 0.000153  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_nxos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000237  Lock_time: 0.000158  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xr'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000226  Lock_time: 0.000154  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'arista_eos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000205  Lock_time: 0.000137  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_asa'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000130  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'juniper_junos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000234  Lock_time: 0.000169  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'mikrotik_routeros'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000132  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ubiquiti_edgerouter'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000213  Lock_time: 0.000142  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'hp_comware'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000228  Lock_time: 0.000145  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'fortinet'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000213  Lock_time: 0.000145  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000254  Lock_time: 0.000148  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'cisco_xe'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000207  Lock_time: 0.000139  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'ruijie_os'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000232  Lock_time: 0.000160  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'linux'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000211  Lock_time: 0.000142  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'extreme_exos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000374  Lock_time: 0.000257  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'oneaccess_oneos'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000263  Lock_time: 0.000188  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'aruba_aoscx'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 48  Schema: portal  QC_hit: No
+# Query_time: 0.000282  Lock_time: 0.000191  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 354
+SET timestamp=1748944801;
+SELECT devices.fqdn as ip, 
+                                                devices.hostname, 
+                                                devices.port,
+                                                devices.vault_id,
+                                                devices.device_os,
+                                                CASE
+                                                    WHEN devices.telnet = 1 AND vendors.id IS NOT NULL THEN vendors.telnet
+                                                    ELSE devices.device_os
+                                                END as device_type
+FROM `devices`
+LEFT JOIN `vendors` ON `vendors`.`device_os` = `devices`.`device_os`
+WHERE `devices`.`disabled` = 0
+AND `devices`.`device_os` = 'checkpoint_gaia'
+ LIMIT 10;
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000387  Lock_time: 0.000232  Rows_sent: 0  Rows_examined: 7
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'planning_17_Routing Table';
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000397  Lock_time: 0.000244  Rows_sent: 0  Rows_examined: 8
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944801;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_connectivity';
+# Time: 250603 10:00:02
+# User@Host: root[root] @ localhost []
+# Thread_id: 40  Schema: portal  QC_hit: No
+# Query_time: 0.000474  Lock_time: 0.000300  Rows_sent: 0  Rows_examined: 9
+# Rows_affected: 0  Bytes_sent: 1201
+SET timestamp=1748944802;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603 10:01:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 51  Schema: portal  QC_hit: No
+# Query_time: 0.001018  Lock_time: 0.000520  Rows_sent: 29  Rows_examined: 69
+# Rows_affected: 0  Bytes_sent: 7203
+SET timestamp=1748944861;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:01:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 51  Schema: portal  QC_hit: No
+# Query_time: 0.000855  Lock_time: 0.000680  Rows_sent: 1  Rows_examined: 10
+# Rows_affected: 0  Bytes_sent: 1497
+SET timestamp=1748944861;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603 10:02:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 53  Schema: portal  QC_hit: No
+# Query_time: 0.001078  Lock_time: 0.000580  Rows_sent: 29  Rows_examined: 70
+# Rows_affected: 0  Bytes_sent: 7203
+SET timestamp=1748944921;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:02:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 53  Schema: portal  QC_hit: No
+# Query_time: 0.000351  Lock_time: 0.000213  Rows_sent: 2  Rows_examined: 11
+# Rows_affected: 0  Bytes_sent: 1793
+SET timestamp=1748944921;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603 10:03:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 55  Schema: portal  QC_hit: No
+# Query_time: 0.000871  Lock_time: 0.000299  Rows_sent: 29  Rows_examined: 71
+# Rows_affected: 0  Bytes_sent: 7203
+SET timestamp=1748944981;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:03:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 55  Schema: portal  QC_hit: No
+# Query_time: 0.000553  Lock_time: 0.000403  Rows_sent: 3  Rows_examined: 12
+# Rows_affected: 0  Bytes_sent: 2089
+SET timestamp=1748944981;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+# Time: 250603 10:04:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 57  Schema: portal  QC_hit: No
+# Query_time: 0.000943  Lock_time: 0.000405  Rows_sent: 29  Rows_examined: 71
+# Rows_affected: 0  Bytes_sent: 7203
+SET timestamp=1748945041;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:04:01';
+# User@Host: root[root] @ localhost []
+# Thread_id: 57  Schema: portal  QC_hit: No
+# Query_time: 0.000928  Lock_time: 0.000652  Rows_sent: 3  Rows_examined: 12
+# Rows_affected: 0  Bytes_sent: 2089
+SET timestamp=1748945041;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
+/usr/sbin/mariadbd, Version: 10.5.28-MariaDB-ubu2004-log (mariadb.org binary distribution). started with:
+Tcp port: 3306  Unix socket: /run/mysqld/mysqld.sock
+Time		    Id Command	Argument
+# Time: 250603 10:06:54
+# User@Host: root[root] @ localhost []
+# Thread_id: 8  Schema:   QC_hit: No
+# Query_time: 0.014671  Lock_time: 0.014189  Rows_sent: 1  Rows_examined: 2
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1748945214;
+SELECT count(*) FROM mysql.user WHERE user='root' and password='' and plugin in ('', 'mysql_native_password', 'mysql_old_password');
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.001453  Lock_time: 0.001306  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 366
+use `portal`;
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '27bed70236c4d279a66964277430fa80';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000241  Lock_time: 0.000157  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4653f7dfad0a469ee725e33c74d1d45c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000130  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0629b86c34e28aa1dd82d0495b2f4227';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000208  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '15263d7a0f624a317f24385fd61e0e7d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000182  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1bf2b2e6d6869514b1ec8d18a5c59d9b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000203  Lock_time: 0.000139  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2280e42554c4a7a54d5cb3742213ad7e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000113  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '55b976e8109bcf0873e2d229559c1951';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000216  Lock_time: 0.000144  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '687f0114d072d3da96807ff0cf26d241';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000126  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe79c83bc428ea2730fc53e3a5529b22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000187  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 385
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ffcc787986c89a5fbbb93b8532ea8a93';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000226  Lock_time: 0.000154  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'afaa36ba17880fa5736f5738604365dd';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000199  Lock_time: 0.000130  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '0d1b9c2b05f6c4703ae8bfb6d9de795f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000232  Lock_time: 0.000152  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3534e2bff5d7bf3e22a19c306c70cb0a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000195  Lock_time: 0.000123  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b28c2c59d4c1b5a798f2bb16c10eab9a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000207  Lock_time: 0.000138  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '33739a568fab4b9cea9539a7aadbad38';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000197  Lock_time: 0.000131  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'abfc4fdcb287d98566325b72da49fe2c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000215  Lock_time: 0.000139  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 368
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5ef7df62a1c7f5aae8d630668ff3eb15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000205  Lock_time: 0.000131  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f2f4febc37f8772cd86a9d3b4f8ce9ac';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000188  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5b0ad804cbccf3463e132681af5025eb';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000193  Lock_time: 0.000126  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9b296f3c123b795f838a41efee72bee3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000207  Lock_time: 0.000139  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'a9a3af6bafe713a1049d9eceb76b2795';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000216  Lock_time: 0.000141  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '2d244d4bbef137404a2e2e192613c23b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000212  Lock_time: 0.000145  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e16256e16ac50457b13529e006be0914';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000222  Lock_time: 0.000156  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 365
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '9ea486d0cc2224ca78d4d0d8de6f57d5';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000206  Lock_time: 0.000136  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4f77207fa8605accfacca2da146d555e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000119  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f32cdac5e692fb011a5a71606abb1474';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000192  Lock_time: 0.000125  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e6d83626b12270017a6ae6a092871689';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000187  Lock_time: 0.000118  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '964e5d75b6cb9ccac1f8f7dd610022c3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000185  Lock_time: 0.000120  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 372
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f53251bfbfd9500b0628543fdc1cd6e8';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000188  Lock_time: 0.000120  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd7a662311c5d96a6946d0475e7a14ab2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000190  Lock_time: 0.000122  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '7dfb93214c17b4d5820b36fff474210d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000124  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '481d7770fb2003fed6fc460c687ee150';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000197  Lock_time: 0.000127  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '09aa4a74d1fb720dce1095cfb0e6f203';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000250  Lock_time: 0.000182  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 366
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'b858941a7d9ce56cf149d772afbe186c';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000196  Lock_time: 0.000122  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 364
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '065d74199e2259ae4f8414e7ceb6a38d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000206  Lock_time: 0.000139  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f7f813174799acab22df64d0bf5c6c15';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000214  Lock_time: 0.000148  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 380
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '058ac69078d493eb0676a394ac9c5ef1';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000206  Lock_time: 0.000139  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 379
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '56ddeadb9530c63f614cbd1f0a1a5eb4';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000187  Lock_time: 0.000118  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 378
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '92016a7bccfc9938d33768f435c89779';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000196  Lock_time: 0.000129  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 373
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'ea7c594b11bbc3179b8c376d932c7827';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000131  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f43322cae55f0c132ebf88c80f22707e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000224  Lock_time: 0.000157  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 381
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'be055e22240be6fd2eea422d51e38004';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000181  Lock_time: 0.000114  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'f507d6b3505139f95bc128842ef91199';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000202  Lock_time: 0.000134  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5e26031bfcc4e101bd3edcbc1322802a';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000188  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4feead15f3f6bc3ff43d542a580e9fc9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000127  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '908a76e179a0265ca35633b80814bda3';
+# User@Host: root[root] @ localhost []
+# Thread_id: 9  Schema:   QC_hit: No
+# Query_time: 0.052923  Lock_time: 0.000511  Rows_sent: 24  Rows_examined: 66
+# Rows_affected: 0  Bytes_sent: 1622
+SET timestamp=1748945214;
+select concat('select count(*) into @discard from `',
+                    TABLE_SCHEMA, '`.`', TABLE_NAME, '`')
+      from information_schema.TABLES where TABLE_SCHEMA<>'INFORMATION_SCHEMA' and TABLE_SCHEMA<>'PERFORMANCE_SCHEMA' and ( ENGINE='MyISAM' or ENGINE='Aria' );
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '3ac21d3906dc2fa095458b7e54c2845d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000218  Lock_time: 0.000147  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 370
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd00541ac12927da4e25bb5ad0e1132ea';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000196  Lock_time: 0.000129  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 369
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '725ef74d888db136869540fe337b84b9';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000180  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 367
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '5df3a515c3397788ced554cc9fe6adc2';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000179  Lock_time: 0.000115  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'c2d93ba97683758caf083e02beedfe6e';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000176  Lock_time: 0.000112  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'e9b584184c2f81dea910adafa3df1382';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000194  Lock_time: 0.000127  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8d36bbe6536d8f8b6fa2751763c67bb0';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000184  Lock_time: 0.000118  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'd707abe66c9472f341e74129a34e8b20';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000185  Lock_time: 0.000121  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '1a4b2ca15a13e16830d22ce958ef940f';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000189  Lock_time: 0.000116  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'bc661c4be1d9238745aacb333babbe22';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000191  Lock_time: 0.000124  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 371
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '53b00fd5fa1334e3295d1fd5f96ae2ed';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000186  Lock_time: 0.000120  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '8ea9e60c571f9c9c2c27809eb1bb55f7';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000272  Lock_time: 0.000207  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 377
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '71f11493b1d8ae659a851bc2720d5832';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000221  Lock_time: 0.000146  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 375
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '4fae47533d17b6176e0d18ca94d93b1b';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000259  Lock_time: 0.000158  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like 'fe6da47d03ae5a0af7fe22a43d67758d';
+# User@Host: root[root] @ localhost []
+# Thread_id: 10  Schema: portal  QC_hit: No
+# Query_time: 0.000215  Lock_time: 0.000152  Rows_sent: 1  Rows_examined: 122
+# Rows_affected: 0  Bytes_sent: 374
+SET timestamp=1748945214;
+SELECT * FROM dbchangelog where dbchangelog_hash like '208884891a03bd492ea28ad9d0009a8c';
+# Time: 250603 10:06:55
+# User@Host: root[root] @ localhost []
+# Thread_id: 35  Schema: portal  QC_hit: No
+# Query_time: 0.001318  Lock_time: 0.001080  Rows_sent: 149  Rows_examined: 298
+# Rows_affected: 0  Bytes_sent: 5910
+SET timestamp=1748945215;
+SELECT *
+FROM `vendors`
+ORDER BY `device_os` DESC;
+# Time: 250603 10:06:57
+# User@Host: root[root] @ localhost []
+# Thread_id: 36  Schema: portal  QC_hit: No
+# Query_time: 0.019744  Lock_time: 0.000286  Rows_sent: 54701  Rows_examined: 54701
+# Rows_affected: 0  Bytes_sent: 4652732
+SET timestamp=1748945217;
+SELECT *
+FROM `mac_lookup`;
+# Time: 250603 10:06:58
+# User@Host: root[root] @ localhost []
+# Thread_id: 37  Schema: portal  QC_hit: No
+# Query_time: 0.001415  Lock_time: 0.001242  Rows_sent: 1  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 596
+SET timestamp=1748945218;
+SELECT `rule`, `content` AS `template`, `order`
+FROM `rules`
+WHERE `rule_type` = 'transform'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# User@Host: root[root] @ localhost []
+# Thread_id: 37  Schema: portal  QC_hit: No
+# Query_time: 0.000229  Lock_time: 0.000148  Rows_sent: 0  Rows_examined: 15
+# Rows_affected: 0  Bytes_sent: 239
+SET timestamp=1748945218;
+SELECT `id`, `rule`, `content` AS `message`, `alert_inverted` AS `inverted`
+FROM `rules`
+WHERE `rule_type` = 'alert'
+AND `disabled` = 0
+AND `type` = 'scanner';
+# Time: 250603 10:07:01
+# User@Host: root[root] @ localhost []
+# Thread_id: 38  Schema: portal  QC_hit: No
+# Query_time: 0.003162  Lock_time: 0.002659  Rows_sent: 29  Rows_examined: 71
+# Rows_affected: 0  Bytes_sent: 7203
+SET timestamp=1748945221;
+SELECT * 
+            FROM task_scheduler
+            LEFT JOIN (
+                SELECT task_scheduler_logs.name as log_name, MAX(task_scheduler_logs.created_at) AS latest_created_at, end_at
+                FROM task_scheduler_logs
+                GROUP BY task_scheduler_logs.name
+            ) latest_tsl ON task_scheduler.name = latest_tsl.log_name
+            WHERE `disabled` = 0 
+            AND  `locked` = 0 
+            AND starts_at < '2025-06-03 12:07:01';
+# Time: 250603 10:07:02
+# User@Host: root[root] @ localhost []
+# Thread_id: 38  Schema: portal  QC_hit: No
+# Query_time: 0.000616  Lock_time: 0.000394  Rows_sent: 3  Rows_examined: 12
+# Rows_affected: 0  Bytes_sent: 2089
+SET timestamp=1748945222;
+SELECT *
+FROM `task_scheduler_logs`
+WHERE `name` = 'plugin_sync_queue';
