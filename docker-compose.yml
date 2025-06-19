@@ -195,7 +195,7 @@ services:
   # Netpicker Services
   netpicker-db:
     image: netpicker/db
-    container_name: netpicker-db
+    container_name: db
     labels:
       netpicker.io: service
     environment:
@@ -213,7 +213,7 @@ services:
 
   netpicker-api:
     <<: *api_common
-    container_name: netpicker-api
+    container_name: api
     labels:
       netpicker.io: service
       service.netpicker.io: api
@@ -231,7 +231,7 @@ services:
     depends_on:
       netpicker-api:
         condition: service_healthy
-    container_name: netpicker-celery
+    container_name: celery
     labels:
       netpicker.io: service
       service.netpicker.io: celery
@@ -247,7 +247,7 @@ services:
 
   netpicker-redis:
     image: redis:7-alpine
-    container_name: netpicker-redis
+    container_name: redis
     labels:
       netpicker.io: service
     volumes:
@@ -261,7 +261,7 @@ services:
 
   netpicker-gitd:
     image: "netpicker/gitd:2.3.1"
-    container_name: netpicker-gitd
+    container_name: gitd
     labels:
       netpicker.io: service
       service.netpicker.io: gitd
@@ -272,7 +272,7 @@ services:
 
   netpicker-gitdctrl:
     image: "netpicker/gitdctrl:2.3.1"
-    container_name: netpicker-gitdctrl
+    container_name: gitdctrl
     labels:
       netpicker.io: service
       service.netpicker.io: gitdctrl
@@ -288,7 +288,7 @@ services:
 
   netpicker-swagger:
     image: swaggerapi/swagger-ui
-    container_name: netpicker-swagger
+    container_name: swagger
     environment:
       SWAGGER_JSON_URL: "/openapi.json"
       TRY_IT_OUT_ENABLED: 1
@@ -299,7 +299,7 @@ services:
 
   netpicker-frontend:
     image: "netpicker/tester-frontend:2.3.1"
-    container_name: netpicker-frontend
+    container_name: frontend
     labels:
       netpicker.io: service
       service.netpicker.io: front-end
@@ -312,14 +312,14 @@ services:
 
   netpicker-kibbitzer:
     image: "netpicker/kibbitzer:2.3.1"
-    container_name: netpicker-kibbitzer
+    container_name: kibbitzer
     labels:
       netpicker.io: service
       service.netpicker.io: kibbitzer
     environment:
       <<: *tag-params
       LOG_LEVEL: DEBUG
-      SHENV_API_URL: http://netpicker-api:8000
+      SHENV_API_URL: http://api:8000
       SHENV_API_TIMEOUT: 30
       SHENV_PRIVILEGED_PLATFORMS: "gigamon_gigavue arista_eos"
       SHENV_SHOW_RUN_aruba_os: "show configuration"
@@ -344,9 +344,9 @@ services:
       - netpicker-redis
 
   netpicker-agent:
-    hostname: netpicker-agent
+    hostname: agent
     image: "netpicker/agent:2.3.1"
-    container_name: netpicker-agent
+    container_name: agent
     labels:
       netpicker.io: service
       service.netpicker.io: agent
@@ -372,7 +372,7 @@ services:
 
   netpicker-syslog-ng:
     image: "netpicker/syslog-ng:2.3.1"
-    container_name: netpicker-syslog-ng
+    container_name: syslog-ng
     labels:
       netpicker.io: service
       service.netpicker.io: syslog-ng
