@@ -5,9 +5,9 @@ x-tag-params: &tag-params
     }'
 
 x-api: &api_common
-  image: "netpicker/api:2.2.9"
+  image: "netpicker/api:2.3.1"
   environment:
-    alembic_version: "8e416d4b7f23"
+    alembic_version: "db7451525ac3"
     JWT_SECRET: "ew9023cnkljfcnsdlkfsfdhs"
     CLI_PROXY_HOST: netpicker-agent
     LOG_LEVEL: INFO
@@ -260,7 +260,7 @@ services:
       test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
 
   netpicker-gitd:
-    image: "netpicker/gitd:2.2.9"
+    image: "netpicker/gitd:2.3.1"
     container_name: netpicker-gitd
     labels:
       netpicker.io: service
@@ -271,7 +271,7 @@ services:
       - slurpit-network
 
   netpicker-gitdctrl:
-    image: "netpicker/gitdctrl:2.2.9"
+    image: "netpicker/gitdctrl:2.3.1"
     container_name: netpicker-gitdctrl
     labels:
       netpicker.io: service
@@ -298,7 +298,7 @@ services:
       - netpicker-api
 
   netpicker-frontend:
-    image: "netpicker/tester-frontend:2.2.9"
+    image: "netpicker/tester-frontend:2.3.1"
     container_name: netpicker-frontend
     labels:
       netpicker.io: service
@@ -311,7 +311,7 @@ services:
       - netpicker-api
 
   netpicker-kibbitzer:
-    image: "netpicker/kibbitzer:2.2.9"
+    image: "netpicker/kibbitzer:2.3.1"
     container_name: netpicker-kibbitzer
     labels:
       netpicker.io: service
@@ -345,7 +345,7 @@ services:
 
   netpicker-agent:
     hostname: netpicker-agent
-    image: "netpicker/agent:2.2.9"
+    image: "netpicker/agent:2.3.1"
     container_name: netpicker-agent
     labels:
       netpicker.io: service
@@ -371,7 +371,7 @@ services:
       interval: 10s
 
   netpicker-syslog-ng:
-    image: "netpicker/syslog-ng:2.2.9"
+    image: "netpicker/syslog-ng:2.3.1"
     container_name: netpicker-syslog-ng
     labels:
       netpicker.io: service
