@@ -240,14 +240,14 @@ services:
       test:
         [
           "CMD-SHELL",
-          "CELERY_BROKER_URL=redis://redis celery inspect ping -t 5",
+          "CELERY_BROKER_URL=redis://netpicker-redis celery inspect ping -t 5",
         ]
       start_period: 15s
       interval: 30s
 
   netpicker-redis:
     image: redis:7-alpine
-    container_name: redis
+    container_name: netpicker-redis
     labels:
       netpicker.io: service
     volumes:
