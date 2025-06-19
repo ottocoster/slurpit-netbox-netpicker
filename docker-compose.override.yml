@@ -94,6 +94,9 @@ services:
   netpicker-celery:
     <<: *api_common
 
+  netpicker-kibbitzer:
+    <<: *api_common
+
   #netpicker-gitd:
   #environment:
   # EXTERNAL_GIT_MAPPINGS: '{"rules/default.git": "https://github.com/netpicker/rules-default.git", "configs/default.git": "https://github.com/netpicker/configs-default.git"}'
